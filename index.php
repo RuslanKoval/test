@@ -1,4 +1,4 @@
-
+<p>Числа фибоначи</p>
 <?php
 function fibonacci($n)
 {
@@ -14,4 +14,22 @@ for ($n = 1; $n <= 16; $n++) {
     echo(fibonacci($n) . ", ");
 }
 echo("...\n")
+?>
+
+<p>Факториал</p>
+
+<?php
+function factorial($n)
+{
+    if ($n == 0) {
+        return 1;
+    } else {
+        return $n * factorial($n - 1);
+    }
+}
+
+for ($n = 0; $n <= 16; $n++) {
+    echo($n . "! = " . factorial($n) . "\n");
+}
+
 ?>
