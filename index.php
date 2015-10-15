@@ -31,6 +31,5 @@ function factorial($n)
 for ($n = 0; $n <= 16; $n++) {
     echo($n . "! = " . factorial($n) . "\n");
 }
-
+echo("...\n")
 ?>
-<p>The End</p>
